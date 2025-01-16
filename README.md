@@ -25,7 +25,6 @@ Pasos Ejecutados para la creación del Proyecto
 Los primeros paso para utilizar la API:
 
 Se debe aplicar Migrations, este desarrollo se hizo con Entity Framework:
-* Add-Migration InitialCreate
 * Update-Database
 
 Una vez creada las tablas procedemos a ejecutar el proyecto. Lo siguientes es crear un nuevo usuario desde Swagger
