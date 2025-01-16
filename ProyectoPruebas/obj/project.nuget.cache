@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ABuc5Kr30+sGcGcNMTwEhZlUq++A9o9t4ODN8F90/LZDAB3M39jT/U5YvGETecj6rwtOKCEGDVIrToFajINrDw==",
+  "dgSpecHash": "LanI74Z1jJGbgRZnBxz44gb5hz9YbpcHBwS+rhK9Act5pxROfu46rH8QIVgR+vmjmL84t87W048/jYZ0Y8Fdlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafio\\ProyectoPruebas\\ProyectoPruebas.csproj",
+  "projectFilePath": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafioHF\\ProyectoPruebas\\ProyectoPruebas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ejvillarroel\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ejvillarroel\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

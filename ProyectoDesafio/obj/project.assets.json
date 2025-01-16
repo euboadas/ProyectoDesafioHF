@@ -3536,11 +3536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafio\\ProyectoDesafio\\ProyectoDesafio.csproj",
+      "projectUniqueName": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafioHF\\ProyectoDesafio\\ProyectoDesafio.csproj",
       "projectName": "ProyectoDesafio",
-      "projectPath": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafio\\ProyectoDesafio\\ProyectoDesafio.csproj",
+      "projectPath": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafioHF\\ProyectoDesafio\\ProyectoDesafio.csproj",
       "packagesPath": "C:\\Users\\ejvillarroel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafio\\ProyectoDesafio\\obj\\",
+      "outputPath": "C:\\Users\\ejvillarroel\\source\\repos\\ProyectoDesafioHF\\ProyectoDesafio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ejvillarroel\\AppData\\Roaming\\NuGet\\NuGet.Config",
