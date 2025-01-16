@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ProyectoDesafio.Assets;
 using ProyectoDesafio.Models;
 using ProyectoDesafio.Models.Dto;
 using System.Security.Claims;
@@ -17,7 +18,6 @@ namespace ProyectoDesafio.Controllers
         #region SERVICES
         private readonly DesafiodesarrolladorContext _context;
         #endregion
-
         #region CONSTRUCTORS
         public TareaController(DesafiodesarrolladorContext context)
         {
@@ -30,12 +30,14 @@ namespace ProyectoDesafio.Controllers
         /// </summary>
         /// <returns>Lista de Tareas</returns>
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(int numPagina = 1, int tamPag = 10, EstadoTarea estadoTarea = EstadoTarea.PENDIENTE, DateTime? fechaVencimiento = default)
         {
             try
             {
                 var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)!.Value;
-                var listTarea = await _context.Tareas.Where(x => x.Usuario.Id == Int32.Parse(userId)).Include(x => x.Usuario).ToListAsync();
+                var listTarea = await _context.Tareas.Where(x => x.Usuario.Id == Int32.Parse(userId)
+                 && (x.Estado == estadoTarea || x.Fechavencimiento == fechaVencimiento)
+                 ).Include(x => x.Usuario).OrderBy(d => d.Id).Skip((numPagina - 1) * tamPag).ToListAsync();
                 return Ok(listTarea);
             }
             catch (Exception ex)

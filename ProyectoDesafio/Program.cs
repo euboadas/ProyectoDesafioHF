@@ -5,7 +5,6 @@ using System.Text;
 using ProyectoDesafio.Custom;
 using ProyectoDesafio.Models;
 using Microsoft.OpenApi.Models;
-using UIDO.Domain.Dto;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using System.Text.Json.Serialization;
